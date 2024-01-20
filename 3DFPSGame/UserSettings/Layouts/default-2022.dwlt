@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 14273
+  controlID: 20
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 14198
+  controlID: 19
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 14199
+  controlID: 79
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -450,9 +450,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5c8fffff
-      m_LastClickedID: -28836
-      m_ExpandedIDs: 36e2ffff18fbffff
+      m_SelectedIDs: 2c7f0000
+      m_LastClickedID: 32556
+      m_ExpandedIDs: 6832ffffc633ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -468,7 +468,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -871,9 +871,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.4890699, y: -1.3982868, z: 3.0771968}
+    m_Target: {x: -1.5645224, y: 2.0596216, z: 5.993129}
     speed: 2
-    m_Value: {x: -1.4890699, y: -1.3982868, z: 3.0771968}
+    m_Value: {x: -1.5645224, y: 2.0596216, z: 5.993129}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -919,9 +919,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 1
   m_Rotation:
-    m_Target: {x: 0.16964817, y: 0.7556755, z: -0.21549311, w: 0.59481627}
+    m_Target: {x: 0.14551021, y: 0.7180865, z: -0.15777959, w: 0.662085}
     speed: 2
-    m_Value: {x: 0.16874996, y: 0.7559716, z: -0.21435183, w: 0.5950493}
+    m_Value: {x: 0.14550495, y: 0.71806055, z: -0.1577739, w: 0.6620611}
   m_Size:
     m_Target: 5.3530283
     speed: 2
@@ -1129,7 +1129,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1137,16 +1137,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 92
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Scripts
   m_LastFoldersGridSize: 92
-  m_LastProjectPath: C:\Users\furka\OneDrive\Belgeler\Aquila Games\Unity Projects\3DFPSGame
+  m_LastProjectPath: C:\Users\furka\OneDrive\Belgeler\GitHub\3D_FPS_Game\3DFPSGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 185f0000
-    m_LastClickedID: 24344
-    m_ExpandedIDs: 00000000a65c0000
+    m_SelectedIDs: 86060000
+    m_LastClickedID: 1670
+    m_ExpandedIDs: 00000000ee050000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ac6b0000a86b000050610000d8620000e0620000e8620000ee62000040630000446300003c63000038630000a86100000e6e0000126e0000806300007c6300008463000088630000fc6400000c650000106500008c630000d0670000867c0000329d0000ca620000666300002a6200003ea0000054a00000706200008661000018610000aa610000c26900005464000062640000745900001c5d00006c5d000012610000326100003861000050640000ae6b00007e6b000094640000c4650000d8650000e064000074640000b29a00009e650000a4650000ba6500008e650000cc6500007a650000b0650000d66b0000d26b0000c86b0000ae640000b2640000b4740000d0750000226c00006e6f0000787800007c780000ba8e0000fc6b00002279000002140100c6170100ba170100be170100c217010096640000c063000080620000c6630000d271000078730000caec0000a4eb0000d0ed000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1218,7 +1218,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 2}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1266,7 +1266,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -28836
+  m_LastSelectedObjectID: -53550
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
