@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 5513dded63f853a4ab05d45bcb4ef26b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - NextDoor: {fileID: 4347902556015011435, guid: d60638cdf0852fe46afba5d4a4fad432, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
