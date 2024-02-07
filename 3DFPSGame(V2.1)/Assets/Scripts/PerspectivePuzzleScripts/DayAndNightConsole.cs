@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 
@@ -7,12 +8,42 @@ public class DayAndNightConsole : MonoBehaviour
 {
     [Header("Sun of the Scene")]
     public Light DirectionalLight;
-    [SerializeField] [Range(1,12)] private int Clock;
+
+    [Header("Clock System")]
+    [SerializeField] [Range(1,24)] private int Clock;
+
+    [Header("Clock UI")]
+    public TextMeshProUGUI ClockText;
+    public GameObject ClockMenu;
+    private bool inTheRangeOfClock = false;
+
+    private void Start()
+    {
+        Clock = 1;
+        ClockMenu.SetActive(false);
+    }
 
     void Update()
     {
 
-        switch (Clock) // Change the directional light rotation according to the clock
+        if (Input.GetKeyDown(KeyCode.E) && inTheRangeOfClock)
+        {
+            if (!ClockMenu.activeSelf)
+            {
+                ClockMenu.SetActive(true);
+                Time.timeScale = 0;
+                // Also need to close the camera input
+            }
+            else
+            {
+                ClockMenu.SetActive(false);
+                Time.timeScale = 1;
+                // Also need to open the camera input
+            }
+
+        }
+
+        switch (Clock) 
         {
             case 1:
             DirectionalLight.transform.rotation = Quaternion.Euler(15*Clock, -30 , 0);
@@ -61,7 +92,79 @@ public class DayAndNightConsole : MonoBehaviour
             case 12:
                 DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
                 break;
+
+            case 13:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 14:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 15:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 16:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 17:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 18:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 19:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 20:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 21:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 22:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 23:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+
+            case 24:
+                DirectionalLight.transform.rotation = Quaternion.Euler(15 * Clock, -30, 0);
+                break;
+        } // Change the directional light rotation according to the clock
+
+        if (Clock < 10)
+        {
+            ClockText.text = "0" + Clock.ToString() + " : 09";
         }
-       
+        else if (Clock >= 10 && Clock < 24)
+        {
+            ClockText.text = Clock.ToString() + " : 09";
+        }
+        else if (Clock == 24)
+        {
+            ClockText.text = "00" + " : 09";
+        }
+
+
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        inTheRangeOfClock = true;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        inTheRangeOfClock = false;
     }
 }
