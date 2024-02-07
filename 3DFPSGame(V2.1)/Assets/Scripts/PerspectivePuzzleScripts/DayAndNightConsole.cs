@@ -10,7 +10,7 @@ public class DayAndNightConsole : MonoBehaviour
     public Light DirectionalLight;
 
     [Header("Clock System")]
-    [SerializeField] [Range(1,24)] private int Clock;
+    [SerializeField] [Range(1,23)] private int Clock;
 
     [Header("Clock UI")]
     public TextMeshProUGUI ClockText;
@@ -41,6 +41,15 @@ public class DayAndNightConsole : MonoBehaviour
                 // Also need to open the camera input
             }
 
+        }
+
+        if(Clock > 23) // Clock cannoot be higher than 23
+        {
+            Clock = 23;
+        }
+        if (Clock < 1) // Clock cannot be lower than 1
+        {
+            Clock = 1;
         }
 
         switch (Clock) 
@@ -149,14 +158,7 @@ public class DayAndNightConsole : MonoBehaviour
         else if (Clock >= 10 && Clock < 24)
         {
             ClockText.text = Clock.ToString() + " : 09";
-        }
-        else if (Clock == 24)
-        {
-            ClockText.text = "00" + " : 09";
-        }
-
-
-        
+        }  
     }
 
     private void OnTriggerEnter(Collider other)
@@ -166,5 +168,16 @@ public class DayAndNightConsole : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         inTheRangeOfClock = false;
+    }
+
+
+    public void IncreaseTheClock()
+    {
+        Clock++;
+    }
+
+    public void DecreaseTheClock()
+    {
+        Clock--;
     }
 }
