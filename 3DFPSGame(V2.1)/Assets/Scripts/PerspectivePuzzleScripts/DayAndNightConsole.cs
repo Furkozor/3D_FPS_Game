@@ -19,8 +19,11 @@ public class DayAndNightConsole : MonoBehaviour
 
     private void Start()
     {
+        // Setting the default values
         Clock = 1;
         ClockMenu.SetActive(false);
+        inTheRangeOfClock = false;
+        Time.timeScale = 1;
     }
 
     void Update()
@@ -163,14 +166,20 @@ public class DayAndNightConsole : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        inTheRangeOfClock = true;
+        if (other.CompareTag("Player"))
+        {
+            inTheRangeOfClock = true;
+        }        
     }
     private void OnTriggerExit(Collider other)
     {
-        inTheRangeOfClock = false;
+        if (other.CompareTag("Player"))
+        {
+            inTheRangeOfClock = false;
+        }       
     }
 
-
+    #region Functions for buttons
     public void IncreaseTheClock()
     {
         Clock++;
@@ -180,4 +189,12 @@ public class DayAndNightConsole : MonoBehaviour
     {
         Clock--;
     }
+
+    public void ExitFromTheMenu ()
+    {
+        ClockMenu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    #endregion 
 }
