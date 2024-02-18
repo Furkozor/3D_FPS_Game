@@ -33,11 +33,13 @@ public class PasswordConsole : MonoBehaviour
             {
                 PasswordMenu.SetActive(true);
                 Time.timeScale = 0;
+                
             }
             else // Close the console
             {
                 PasswordMenu.SetActive(false);
                 Time.timeScale = 1;
+                
             }
         }
 

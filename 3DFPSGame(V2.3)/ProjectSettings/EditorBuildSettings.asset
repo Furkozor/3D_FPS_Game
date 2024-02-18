@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/PerspectivePuzzle.unity
+    guid: 44378c1b57dab8b4f8258eab813f388f
+  - enabled: 1
+    path: Assets/Scenes/PressurePlatePuzzle.unity
+    guid: c4c2ff016285b8f45ab3a5ab1501f148
   m_configObjects: {}

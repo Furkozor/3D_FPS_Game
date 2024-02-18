@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject quitPanel, settingsPanel;
     public void NewGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("PressurePlatePuzzle");
     }
     public void Chapters()
     {
